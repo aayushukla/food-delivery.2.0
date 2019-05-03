@@ -23,6 +23,12 @@ export class WelcomeComponent {
         "dish"   :  "Ice cream", 
         "price"      :  60,
         "quantity" : 5 
+    },
+    { 
+        "orderNumber"  :  104, 
+        "dish"   :  "Momos", 
+        "price"      :  60,
+        "quantity" : 5 
     }
 ]
 

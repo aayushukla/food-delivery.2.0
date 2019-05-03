@@ -7,6 +7,8 @@ import { WelcomeComponent } from './welcome.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { EditMenuComponent } from './editmenu.component';
+import { AdminModule } from 'src/admin/admin.module';
+import { RestaurantModule } from 'src/resturant/restaurant.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { EditMenuComponent } from './editmenu.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AdminModule,
+    RestaurantModule
   ],
   providers: [],
   bootstrap: [AppComponent]

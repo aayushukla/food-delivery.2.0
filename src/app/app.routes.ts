@@ -6,6 +6,6 @@ import { EditMenuComponent } from './editmenu.component';
 export const appRoutes: Routes = [
     {path: "editmenu", component: EditMenuComponent},
     {path: "home", component: WelcomeComponent},
-    {path: "", component: WelcomeComponent}
-    
+    {path: "", component: WelcomeComponent},
+
     ];
