@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({
     templateUrl: "./welcome.component.html",
     selector: "welcome"
 })
-export class WelcomeComponent {
+export class WelcomeComponent{
+  
 
+    constructor( public nav: AppService ) {
+        this.nav.show();
+        
+    }
+   
     orders=[{ 
         "orderNumber"  :  101, 
         "dish"   :  "Burger", 
@@ -31,5 +38,7 @@ export class WelcomeComponent {
         "quantity" : 5 
     }
 ]
+
+
 
 }
